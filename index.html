@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Math Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Math Challenge</h1>
+
+  <div id="menu">
+    <p>Select difficulty:</p>
+    <button onclick="startGame('easy')">Easy</button>
+    <button onclick="startGame('medium')">Medium</button>
+    <button onclick="startGame('hard')">Hard</button>
+  </div>
+
+  <div id="game" class="hidden">
+    <p id="levelText"></p>
+    <p id="question"></p>
+
+    <input type="number" id="answer" />
+    <button onclick="submitAnswer()">Submit</button>
+
+    <p id="feedback"></p>
+    <p id="scoreText"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
